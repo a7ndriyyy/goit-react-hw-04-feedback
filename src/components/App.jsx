@@ -22,9 +22,9 @@ export const App = () => {
   };
 
   const handleLeaveFeedback = option => {
-    option === 'good' && setGood(stat => ({ ...stat, good: stat.good + 1 }));
-    option === 'neutral' && setNeutral(stat => ({ ...stat, neutral: stat.neutral + 1 }));
-    option === 'bad' && setBad(stat => ({ ...stat, bad: stat.bad + 1 }));
+    option === 'good' && setGood( prevState => prevState + 1);
+    option === 'neutral' && setNeutral(neutral + 1);
+  option === 'bad' && setBad(bad + 1 );
 
   };
 
