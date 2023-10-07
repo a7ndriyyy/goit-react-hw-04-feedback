@@ -10,7 +10,7 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
   
-  const feedbackNames = [good, neutral, bad];
+  const feedbackNames = ["good", "neutral", "bad"];
   
 
  const countTotalFeedback = () => {
